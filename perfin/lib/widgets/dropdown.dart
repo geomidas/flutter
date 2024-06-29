@@ -1,6 +1,8 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
-const List<String> list = <String>['EUR', 'USD'];
+const List<String> list = <String>['EUR', 'USD', 'GBP'];
 
 class DropdownMenuExample extends StatefulWidget {
   const DropdownMenuExample({super.key});
@@ -25,6 +27,8 @@ class _DropdownMenuExampleState extends State<DropdownMenuExample> {
       dropdownMenuEntries: list.map<DropdownMenuEntry<String>>((String value) {
         return DropdownMenuEntry<String>(value: value, label: value);
       }).toList(),
+      inputDecorationTheme: InputDecorationTheme(
+          fillColor: Color.fromARGB(255, 133, 192, 240), filled: false),
     );
   }
 }
