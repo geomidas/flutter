@@ -9,7 +9,7 @@ class _InflowsOutflowsPageState extends State<InflowsOutflowsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
+      body: Container(
         child: Text('Inflows and Outflows'),
       ),
     );

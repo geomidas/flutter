@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widgets/dropdown.dart';
 
 class ConfigPage extends StatefulWidget {
   @override
@@ -10,7 +11,11 @@ class _ConfigPageState extends State<ConfigPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(
-        children: [Text('Configuration')],
+        children: [
+          Center(
+            child: DropdownMenuExample(),
+          )
+        ],
       ),
     );
   }

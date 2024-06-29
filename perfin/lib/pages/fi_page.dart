@@ -9,7 +9,7 @@ class _FIPageState extends State<FIPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
+      body: Container(
         child: Text('Financial Independence'),
       ),
     );
