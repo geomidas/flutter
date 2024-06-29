@@ -47,6 +47,7 @@ class _MainScreenState extends State<MainScreen>
       appBar: AppBar(
         title: Text('Perfin'),
         backgroundColor: Colors.blue,
+        foregroundColor: Colors.white,
         bottom: TabBar(
           controller: _tabController,
           tabs: [
